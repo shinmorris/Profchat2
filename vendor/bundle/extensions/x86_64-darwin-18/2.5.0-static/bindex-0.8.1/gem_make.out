@@ -1,0 +1,15 @@
+current directory: /Users/kakoshinya/projects/chat-space/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+/Users/kakoshinya/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20191119-87249-c6oqg.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kakoshinya/projects/chat-space/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/kakoshinya/projects/chat-space/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/kakoshinya/projects/chat-space/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20191119-87249-xolksf/skiptrace/internal
