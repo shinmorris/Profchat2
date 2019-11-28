@@ -25,8 +25,8 @@ Things you may want to cover:
 
 # chatspace DB設計
 ## usersテーブル
-|name|email|password|
-|----|-----|--------|
+|Column|Type|Options|
+|------|----|-------|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
@@ -35,8 +35,8 @@ Things you may want to cover:
 - has_many :group_members
 
 ## groupsテーブル
-|group_name|chat_member|user_id|
-|----------|-----------|-------|
+|Column|Type|Options|
+|------|----|-------|
 |group_name|text|null: false|
 |chat_member|text||
 |user_id|integer|null: false, foreign_key: true|
@@ -45,9 +45,9 @@ Things you may want to cover:
 - has_many :posts
 - has_many :group_members
 
-## group_memberテーブル
-|user_id|group_id|
-|-------|-----|
+## groups_usersテーブル
+|Column|Type|Options|
+|------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
@@ -55,8 +55,8 @@ Things you may want to cover:
 - belongs_to :group
 
 ## postsテーブル
-|message|image|group_id|
-|-------|-----|--------|
+|Column|Type|Options|
+|------|----|-------|s
 |message|text|null: false|
 |image|text|null: false|
 |group_id|integer|null: false, foreign_key: true|
