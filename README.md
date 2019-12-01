@@ -8,7 +8,7 @@
 ### Association
 - has_many :groups, through: :groups_users
 - has_many :groups_users
-- has_many :posts
+- has_many :messages
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -16,7 +16,7 @@
 |name|string|null: false|
 ### Association
 - has_many :user, through: :groups_users
-- has_many :posts
+- has_many :messages
 - has_many :groups_users
 
 ## groups_usersテーブル
@@ -28,10 +28,10 @@
 - belongs_to :user
 - belongs_to :group
 
-## postsテーブル
+## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|message|text|null: false|
+|content|text|null: false|
 |image|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
