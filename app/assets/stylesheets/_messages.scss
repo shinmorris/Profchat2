@@ -18,28 +18,23 @@
   }
 
     .top-items{
-      // background-color: #ffffff;
       height: 20px;
       width: 260px;
       display: flex;
-      // flex-wrap: wrap;
-      // justify-content: flex-start;
+
 
     &__name{
-      color: white;
-      // text-align: left;
-      // justify-content: flex-end;
+      color: #ffffff;
+
 
       }
 
     &__icons{
       display: flex;
       margin-left:auto;
-      .li{
-      text-align: right;
-      }
-
-
+    }
+      .fas{
+        color: #ffffff;
       }
     }
 
@@ -47,6 +42,29 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     width: 300px;
+    .group-box{
+      height: 80px;
+      width: 300px;
+      color: #ffffff;
+
+      .group-name{
+        // background-color: #ffffff;
+        font-size: 15px;
+        height: 15px;
+        width: 260px;
+        padding: 20px 20px 5px;
+        text-align: left;
+
+      }
+      .group-message{
+        font-size: 11px;
+        height: 11px;
+        width: 260px;
+        padding: 20px 20px 5px;
+        text-align: left;
+      }
+
+    }
 
   }
 
@@ -56,23 +74,86 @@
 .chat-main{
   width: calc(100vw - 300px);
   height: 100vh;
+  display: block;
   float: left;
 
+    &__group-list{
+      background-color: #ffffff;
+      height: 100px;
+      width: calc(100vw - 300px);
+      padding: 0px 40px 0px 60px;
+      // position: absolute;
+
+      .group-name{
+      height: 20px;
+      width: 80px;
+      position: relative;
+      top: 35px;
+      font-size: 20px;
+      color: #333333;
+      }
+
+      .group-member{
+      height: 12px;
+      width: 80px;
+      position: relative;
+      top: 60px;
+      font-size: 12px;
+      color: #999999;
+      text-align: left;
+      display: flex;
+      }
 
 
-  &__group-list{
-    background-color: #ffffff;
-    height: 100px;
-  }
+    .group-edit{
+      height: 40px;
+      width: 40px;
+      display: flex;
+      margin-left:auto;
+      justify-content: center;
+      align-items: center;
+      }
+
+    }
 
   &__message-list{
-    background-color: #fafafa;
-    height: calc(100vh - 190px);
+      background-color: #fafafa;
+      width: calc(100vw - 300px);
+      height: calc(100vh - 190px);
+      position: relative;
+      padding:40px 40px 40px 40px;
+
+    .post-name{
+      width: calc(100vw - 380px);
+      height: 46px;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      }
+      .name p{
+        font-size: 16px;
+        display: inline;
+
+      }
+      .date{
+        display: inline;
+
+      }
+        .date p{
+          font-size: 12px;
+          vertical-align: top;
+          margin-left: 10px;
+          color: #999999;
+        }
+      .post{
+
+      }
 
   }
 
   &__message-form{
     background-color: #d2d2d2;
+    width: calc(100vw - 300px);
     height: 90px;
 
   }
