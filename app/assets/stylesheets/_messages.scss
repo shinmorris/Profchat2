@@ -32,9 +32,11 @@
     &__icons{
       display: flex;
       margin-left:auto;
-    }
+      }
       .fas{
         color: #ffffff;
+        margin-left: 0.3rem;
+        text-decoration: none;
       }
     }
 
@@ -81,7 +83,7 @@
       background-color: #ffffff;
       height: 100px;
       width: calc(100vw - 300px);
-      padding: 0px 40px 0px 60px;
+      padding: 0px 40px;
       // position: absolute;
 
       .group-name{
@@ -120,20 +122,25 @@
       background-color: #fafafa;
       width: calc(100vw - 300px);
       height: calc(100vh - 190px);
-      position: relative;
-      padding:40px 40px 40px 40px;
+      padding:35px 40px 40px 40px;
+      // margin: 0px auto;
 
     .post-name{
       width: calc(100vw - 380px);
       height: 46px;
-      position: absolute;
-      top: 40px;
-      left: 40px;
+      display: block;
+      margin-bottom: 46px;
+
+      }
+
+      .name{
+        margin-bottom: 10px;
       }
       .name p{
         font-size: 16px;
         display: inline;
         font-weight: bold;
+        color: #434a54;
 
       }
       .date{
@@ -143,14 +150,14 @@
         .date p{
           font-size: 12px;
           vertical-align: top;
-          margin-left: 10px;
+          margin-left: 5px;
           color: #999999;
+          font-weight: normal;
         }
       .post{
         font-size: 14px;
         color: #434a54;
         display: inline;
-        margin-bottom: 10px;
 
       }
 
@@ -160,7 +167,30 @@
     background-color: #d2d2d2;
     width: calc(100vw - 300px);
     height: 90px;
+    display:flex;
+    }
+    .input-box{
+      height: 50px;
+      width: 100%;
+      padding: 0 40px 0 10px;
+      border-style: none;
+      color: #434a54;
+      margin:auto;
 
-  }
+
+      }
+    .form-btn{
+      width: 100px;
+      height: 50px;
+      padding: 0 30px;
+      margin-left: 15px;
+      background-color: #38aef0;
+      color: white;
+      cursor: pointer;
+      margin:auto;
+      padding: 0 30px;
+
+
+    }
 
 }
