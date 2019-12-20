@@ -5,7 +5,6 @@
 .side-bar{
   width: 300px;
   height: 100vh;
-  // display: inline-block;
   float: left;
 
   &__user-name{
@@ -49,7 +48,7 @@
       width: 300px;
       color: #ffffff;
 
-      .group-name{
+      &__group-name{
         // background-color: #ffffff;
         font-size: 15px;
         height: 15px;
@@ -58,7 +57,7 @@
         text-align: left;
 
       }
-      .group-message{
+      &__group-message{
         font-size: 11px;
         height: 11px;
         width: 260px;
@@ -108,22 +107,25 @@
 
 
     .group-edit{
+      display: flex;
       height: 40px;
       width: 40px;
-      display: flex;
       margin-left:auto;
+      padding: 0px 35px;
       justify-content: center;
       align-items: center;
+      border: solid 1px #38aef0;
+      color: #38aef0;
+      cursor: pointer;
       }
 
     }
 
   &__message-list{
-      background-color: #fafafa;
-      width: calc(100vw - 300px);
       height: calc(100vh - 190px);
+      width: calc(100vw - 300px);
       padding:35px 40px 40px 40px;
-      // margin: 0px auto;
+      background-color: #fafafa;
 
     .post-name{
       width: calc(100vw - 380px);
@@ -165,32 +167,41 @@
 
   &__message-form{
     background-color: #d2d2d2;
-    width: calc(100vw - 300px);
-    height: 90px;
     display:flex;
+    padding: auto 40px;
+    position: relative;
+    height: 90px;
+    width: calc(100vw - 300px);
     }
-    .input-box{
-      height: 50px;
-      width: 100%;
-      padding: 0 40px 0 10px;
-      border-style: none;
-      color: #434a54;
-      margin:auto;
-
-
-      }
+    .form{
+      text-align: center;
+      position: relative;
+        }
+      .input{
+        color: #434a54;
+        width: calc(100vw - 495px);
+        height: 50px;
+        display: block;
+        margin:20px 0px 20px 40px;
+         }
+        .fa-image{
+          font-size: 25px;
+          cursor: pointer;
+          font-weight: normal;
+          color: black;
+          position: absolute;
+          top: 32.5px;
+          right: 10px;
+        }
     .form-btn{
       width: 100px;
       height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
       background-color: #38aef0;
       color: white;
       cursor: pointer;
-      margin:auto;
-      padding: 0 30px;
-
-
+      margin: 20px 40px 20px 15px;
+      text-align: center;
+      line-height:50px;
     }
 
 }
