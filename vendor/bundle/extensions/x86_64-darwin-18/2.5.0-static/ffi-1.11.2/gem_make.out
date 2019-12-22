@@ -1,5 +1,5 @@
 current directory: /Users/kakoshinya/projects/chat-space/vendor/bundle/gems/ffi-1.11.2/ext/ffi_c
-/Users/kakoshinya/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20191119-87249-d62rdl.rb extconf.rb
+/Users/kakoshinya/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20191222-75884-1p23se8.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... no
 checking for shlwapi.h... no
@@ -125,4 +125,4 @@ compiling Types.c
 compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.bundle
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20191119-87249-8zhsi2
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20191222-75884-1xfwugg

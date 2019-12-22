@@ -1,5 +1,5 @@
 current directory: /Users/kakoshinya/projects/chat-space/vendor/bundle/gems/byebug-11.0.1/ext/byebug
-/Users/kakoshinya/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20191119-87249-j51c3u.rb extconf.rb
+/Users/kakoshinya/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20191222-75884-1l03rf.rb extconf.rb
 creating Makefile
 
 current directory: /Users/kakoshinya/projects/chat-space/vendor/bundle/gems/byebug-11.0.1/ext/byebug
@@ -16,4 +16,4 @@ linking shared-object byebug/byebug.bundle
 
 current directory: /Users/kakoshinya/projects/chat-space/vendor/bundle/gems/byebug-11.0.1/ext/byebug
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20191119-87249-gmiv96/byebug
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20191222-75884-1k34ymz/byebug
