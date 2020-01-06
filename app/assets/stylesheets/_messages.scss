@@ -43,10 +43,10 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     width: 300px;
+
     .group-box{
       height: 80px;
       width: 300px;
-      color: #ffffff;
 
       &__group-name{
         font-size: 15px;
@@ -54,6 +54,7 @@
         width: 260px;
         padding: 20px 20px 5px;
         text-align: left;
+        color: #ffffff;
 
       }
       &__group-message{
@@ -62,6 +63,7 @@
         width: 260px;
         padding: 20px 20px 5px;
         text-align: left;
+        color: #ffffff;
       }
 
     }
