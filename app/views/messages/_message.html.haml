@@ -1,11 +1,11 @@
--# .messages
--#   = render @messages
 .chat-main
   .chat-main__group-list
     .group-name
+      %p test
       = group.name
     .group-member
-      -# = group.
+      %p member
+      = group.
     .group-edit{type: "submit",href:"#"}
       %p Edit
   .chat-main__message-list
