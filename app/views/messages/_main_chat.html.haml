@@ -1,32 +1,19 @@
 .chat-main
   .chat-main__group-list
     .group-name
-      %p test
+      = @group.name
     .group-member
-      %p member
+      = @group.users.pluck(:name).join(' ')
     .group-edit{type: "submit",href:"#"}
-      %p Edit
+      = link_to 'Edit',edit_group_path(@group),class: "edit-link"
   .chat-main__message-list
-    .post-name
-      .name
-        %p name
-        .date
-          %p 2019/12/18(Wed) 00:55:22
-      .post
-        %p text
-    .post-name
-      .name
-        %p name
-        .date
-          %p 2019/12/18(Wed) 00:55:22
-      .post
-        %p text
+    = render @messages
   .chat-main__message-form
     .form
-      %input{type: "text",placeholder: "type a message" ,class: "input"}
-        .input-box__image{type: "file",:class =>"input-box__image"}
-          %label{class: "input-box__image"}
-            =icon('far', 'image', class: 'fa-image')
-            %input{type: "file",class: "file-upload"}
-    .form-btn{:type => "submit"}
-      %p Send
+      = form_for [@group, @message] do |f|
+        = f.text_field :body, class: 'form__message', placeholder: 'type a message'
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
