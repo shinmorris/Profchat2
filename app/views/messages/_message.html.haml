@@ -1,30 +1,10 @@
-.chat-main
-  .chat-main__group-list
-    .group-name
-      %p test
-      = group.name
-    .group-member
-      %p member
-      = group.
-    .group-edit{type: "submit",href:"#"}
-      %p Edit
-  .chat-main__message-list
-    .post-name
-      .name
-        = message.user.name
-        .date
-          = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-      .post
-        - if message.content.present?
-        %p.lower-message__content
-          = message.content
-        = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
-  .chat-main__message-form
-    .form
-      = form_for [@group, @message] do |f|
-        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-        .form__mask
-          = f.label :image, class: 'form__mask__image' do
-            = icon('fas', 'image', class: 'icon')
-            = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
+.post-name
+  .name
+    = message.user.name
+  .date
+    = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .post
+    - if message.body.present?
+      %p.lower-message__content
+        = message.body
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?

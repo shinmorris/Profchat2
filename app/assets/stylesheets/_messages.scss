@@ -173,39 +173,40 @@
     height: 90px;
     width: calc(100vw - 300px);
     }
-    .form{
-      text-align: center;
-      position: relative;
-        }
-      .input{
-        color: #434a54;
-        width: calc(100vw - 495px);
+    .form {
+      background-color: #DDDDDD;
+      box-sizing: border-box;
+      height: 90px;
+      padding: 20px 50px 20px 40px;
+      &__message {
+        border: none;
+        float: left;
         height: 50px;
-        display: block;
-        margin:20px 0px 20px 40px;
-        padding: 0 40px 0 10px;
-         }
-        .fa-image{
-          font-size: 25px;
-          cursor: pointer;
-          font-weight: normal;
-          color: black;
-          position: absolute;
-          top: 32.5px;
-          right: 10px;
+        width: calc(100vw - 537px);
+        padding: 0px 10px 0px 10px;
+      }
+      &__mask {
+        background-color: $white;
+        float: left;
+        height: 50px;
+        padding-right: 10px;
+        &__image {
+          font-size: 20px;
+          line-height: 50px;
         }
-        .file-upload{
-          display:none;
+        .hidden {
+          display: none;
         }
-    .form-btn{
-      width: 100px;
-      height: 50px;
-      background-color: #38aef0;
-      color: white;
-      cursor: pointer;
-      margin: 20px 40px 20px 15px;
-      text-align: center;
-      line-height:50px;
+      }
+      &__submit {
+        background-color: $light_blue;
+        border: none;
+        color: $white;
+        float: right;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
+      }
     }
-
-}
+  }
