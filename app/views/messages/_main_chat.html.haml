@@ -1,11 +1,11 @@
 .chat-main
   .chat-main__group-list
     .group-name
-      %p name
+      = @group.name
     .group-member
-      %p member
+      = @group.users.pluck(:name).join(' ')
     .group-edit{type: "submit",href:"#"}
-      %p Edit
+      = link_to 'Edit',edit_group_path(@group),class: "edit-link"
   .chat-main__message-list
     = render @messages
   .chat-main__message-form
