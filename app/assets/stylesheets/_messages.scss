@@ -133,8 +133,8 @@
 
     .post-name{
       width: calc(100vw - 380px);
-      height: 46px;
-      display: block;
+      // height: 46px;
+      display: inline-block;
       margin-bottom: 46px;
 
       }
@@ -161,9 +161,18 @@
           font-weight: normal;
         }
       .post{
+        display: block;
         font-size: 14px;
         color: #434a54;
-        display: inline;
+        .lower-message__content{
+          display: block;
+        }
+        .lower-message__image{
+          // display: block;
+          // height: 100px;
+          // height: auto;
+        }
+
 
       }
 
