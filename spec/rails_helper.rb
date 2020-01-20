@@ -68,3 +68,4 @@ RSpec.configure do |config|
   config.include ControllerMacros, type: :controller
   #〜省略〜
 end
+
