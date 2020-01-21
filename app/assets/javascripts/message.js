@@ -3,35 +3,35 @@ $(function(){
   if ( message.image){
     var html =
     `<div class='post-name'>
-    <div class='name'>
-    ${message.user_name}
-    </div>
-    <div class='date'>
-    ${message.created_at}
-    </div>
-    <div class='post'>
-    <p class = 'lower-message__content'>
-    ${message.body}
-    </p>
-    </div class = 'lower-message__image'>
-      <img src=${message.image} >
-    </div>
+      <div class='name'>
+        ${message.user_name}
+      </div>
+      <div class='date'>
+        ${message.created_at}
+      </div>
+      <div class='post'>
+        <p class = 'lower-message__content'>
+          ${message.body}
+        </p>
+        </div class = 'lower-message__image'>
+          <img src=${message.image} >
+      </div>
     </div>`
     return html;
   }else{
     var html =
     `<div class='post-name'>
-    <div class='name'>
-    ${message.user_name}
-    </div>
-    <div class='date'>
-    ${message.created_at}
-    </div>
-    <div class='post'>
-    <p class = "lower-message__content">
-    ${message.body}
-    </p>
-    </div>
+      <div class='name'>
+        ${message.user_name}
+      </div>
+      <div class='date'>
+        ${message.created_at}
+      </div>
+      <div class='post'>
+        <p class = "lower-message__content">
+          ${message.body}
+        </p>
+      </div>
     </div>`
     return html;
   }
