@@ -60,7 +60,12 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  config.include FactoryBot::Syntax::Methods
+end
+RSpec.configure do |config|
+  Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include ControllerMacros, type: :controller
+  #〜省略〜
 end
 
-
-# rails_helper.rbは、RSpecを利用する際に、共通の設定を書いておくファイルです。各テスト用ファイルでこちらのファイルを読み込むことで、共通の設定や、メソッドを適用します。

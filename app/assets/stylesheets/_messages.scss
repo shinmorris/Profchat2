@@ -129,11 +129,11 @@
       width: calc(100vw - 300px);
       padding:35px 40px 40px 40px;
       background-color: #fafafa;
+      overflow: scroll;
 
     .post-name{
       width: calc(100vw - 380px);
-      height: 46px;
-      display: block;
+      display: inline-block;
       margin-bottom: 46px;
 
       }
@@ -160,9 +160,15 @@
           font-weight: normal;
         }
       .post{
+        display: block;
         font-size: 14px;
         color: #434a54;
-        display: inline;
+        .lower-message__content{
+          display: block;
+        }
+        .lower-message__image{
+        }
+
 
       }
 
