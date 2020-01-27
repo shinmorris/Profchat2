@@ -1,5 +1,4 @@
 $(function(){
-  console.log('test')
 
   function addUser(user) {
     let html = `
