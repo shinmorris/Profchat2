@@ -41,7 +41,6 @@ $(function(){
           $('.form__submit').prop('disabled', false);
         })
         .fail(function() {
-          console.log('error');
           alert("メッセージ送信に失敗しました");
         })
       });
@@ -67,7 +66,6 @@ $(function(){
         }
       })
       .fail(function() {
-        console.log('error');
       });
     };
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
