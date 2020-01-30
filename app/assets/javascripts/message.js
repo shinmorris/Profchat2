@@ -66,10 +66,11 @@ $(function(){
         }
       })
       .fail(function() {
+        alert("自動更新に失敗しました。");
       });
     };
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-      setInterval(reloadMessages, 7000);
+      setInterval(reloadMessages, 3000);
     }
   });
 });
