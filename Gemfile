@@ -46,6 +46,11 @@ group :development, :test do
   # 簡単にダミーのインスタンスを作成することができる
   gem 'faker'
   # ダミーデータを作成するため
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
 end
 
 group :development do
