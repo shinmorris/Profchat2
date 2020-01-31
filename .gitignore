@@ -18,3 +18,4 @@
 /vendor/bundle
 group-materials/
 public/
+config/secrets.yml
