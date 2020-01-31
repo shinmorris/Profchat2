@@ -2,7 +2,7 @@
 $(function(){
     $(function(){
       var buildHTML = function(message) {
-          let image = ( message.image ) ? `<img class= "lower-message__image" src=${message.image} >` : "";
+          let image = ( message.image) ? `<img class= "lower-message__image" src=${message.image} >` : "";
           let html = `<div class="post-name", data-message-id="${message.id}">
                             <div class="name">
                             ${message.user_name}
@@ -70,7 +70,7 @@ $(function(){
       });
     };
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-      setInterval(reloadMessages, 3000);
+      setInterval(reloadMessages, 7000);
     }
   });
 });
