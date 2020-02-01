@@ -56,9 +56,9 @@ $(function(){
       .done(function(messages) {
         if (messages.length !== 0) {
           var insertHTML = '';
-          // $.each(messages, function(i, message) {
+          $.each(messages, function(i, message) {
             insertHTML += buildHTML(message)
-          // });
+          });
           $('.post-name').append(insertHTML);
           $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
           $('form')[0].reset();
