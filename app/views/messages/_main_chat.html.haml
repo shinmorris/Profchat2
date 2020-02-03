@@ -3,7 +3,8 @@
     .group-name
       = @group.name
     .group-member
-      = @group.users.pluck(:name).join(' ')
+      %p Member :&nbsp;
+      =  @group.users.pluck(:name).join(' ')
     .group-edit{type: "submit",href:"#"}
       = link_to 'Edit',edit_group_path(@group),class: "edit-link"
   .chat-main__message-list
